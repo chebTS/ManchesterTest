@@ -18,6 +18,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         findViewById(R.id.btn_login).setOnClickListener(this);
+        findViewById(R.id.txt_register).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +26,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.btn_login:
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                break;
+            case R.id.txt_register:
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
                 break;
         }
     }
