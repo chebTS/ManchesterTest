@@ -1,7 +1,6 @@
 package ua.ck.manchester.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import ua.ck.manchester.R;
@@ -10,7 +9,7 @@ import ua.ck.manchester.R;
 /**
  * Created by cheb on 3/9/16.
  */
-public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+public class RegisterActivity extends BaseToolbarActivity implements View.OnClickListener {
 
 
     @Override
@@ -27,5 +26,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 finish();
                 break;
         }
+    }
+
+    @Override
+    protected void setUpViews() {
+
+    }
+
+    @Override
+    protected int getTitleResource() {
+        return R.string.title_register;
     }
 }

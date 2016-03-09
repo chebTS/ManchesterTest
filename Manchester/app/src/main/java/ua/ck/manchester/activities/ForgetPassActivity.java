@@ -1,7 +1,6 @@
 package ua.ck.manchester.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import ua.ck.manchester.R;
@@ -10,7 +9,7 @@ import ua.ck.manchester.R;
 /**
  * Created by cheb on 3/9/16.
  */
-public class ForgetPassActivity extends AppCompatActivity implements View.OnClickListener {
+public class ForgetPassActivity extends BaseToolbarActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +25,16 @@ public class ForgetPassActivity extends AppCompatActivity implements View.OnClic
                 finish();
                 break;
         }
+    }
+
+
+    @Override
+    protected void setUpViews() {
+
+    }
+
+    @Override
+    protected int getTitleResource() {
+        return R.string.title_forget;
     }
 }

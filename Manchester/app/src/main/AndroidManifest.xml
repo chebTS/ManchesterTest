@@ -27,11 +27,13 @@
         </activity>
 
         <activity
+            android:theme="@style/AppTheme.Login"
             android:name=".activities.ForgetPassActivity"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
+            android:theme="@style/AppTheme.Login"
             android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait">
         </activity>
