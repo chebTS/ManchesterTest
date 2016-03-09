@@ -27,6 +27,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.btn_login:
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                finish();
                 break;
             case R.id.txt_register:
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
