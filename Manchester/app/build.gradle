@@ -27,4 +27,5 @@ dependencies {
     compile 'com.google.maps.android:android-maps-utils:0.3+'
     compile 'com.google.android.gms:play-services:7.5.0'
     compile 'com.stripe:stripe-android:+'
+    compile 'org.osmdroid:osmdroid-android:5.1@aar'
 }

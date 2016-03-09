@@ -27,22 +27,29 @@
         </activity>
 
         <activity
-            android:theme="@style/AppTheme.Login"
-            android:name=".activities.ForgetPassActivity"
+            android:name=".activities.TestOSMActivity"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:theme="@style/AppTheme.Login"
+            android:name=".activities.ForgetPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Login">
+        </activity>
+
+        <activity
             android:name=".activities.RegisterActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Login">
         </activity>
 
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
-            android:value="true" />
+            android:value="true"/>
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDy8bcHyBV3IITfn0QS4B4nGNrJle8c73k"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDy8bcHyBV3IITfn0QS4B4nGNrJle8c73k"/>
     </application>
 
 </manifest>

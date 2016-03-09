@@ -17,6 +17,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        findViewById(R.id.txt_please_login).setOnClickListener(this);
         findViewById(R.id.btn_login).setOnClickListener(this);
         findViewById(R.id.txt_register).setOnClickListener(this);
         findViewById(R.id.txt_foreget_pass).setOnClickListener(this);
@@ -34,6 +35,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.txt_foreget_pass:
                 startActivity(new Intent(LoginActivity.this, ForgetPassActivity.class));
+                break;
+            case R.id.txt_please_login:
+                startActivity(new Intent(LoginActivity.this, TestOSMActivity.class));
                 break;
         }
     }
